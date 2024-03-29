@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <title>RGB Color Generator</title>
+  <title>RGBA Color Generator</title>
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <h1>RGB Color Generator</h1>
+      <h1>RGBA Color Generator</h1>
     </header>
     <div class="container">
       <label for="range" class="range-label">Red Color Range</label>
@@ -28,6 +28,12 @@
       <input type="range" name="range3" id="range3" min="0" max="255" />
       <div class="blue-range-indicator special">0</div>
       <br /><br />
+
+      <div class="opacity-div">
+        <label for="range" class="range-label">Opacity</label>
+        <input type="range" name="range4" id="range4" min="0.1" max="1" step="0.1" />
+        <div class="opacity-indicator special">1</div>
+      </div>
 
       <!-- color value functionality -->
       <input id="color-value" type="text" />&nbsp;&nbsp;
