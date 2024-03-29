@@ -42,6 +42,11 @@ function displayRangeInput(indicator, range) {
   });
 }
 
+// display color in color box on manual input of rgb value
+colorValueField.addEventListener('input', function() {
+  colorBox.style.backgroundColor = this.value;
+});
+
 // copying rgb value to clipboard
 colorValueBtn.addEventListener("click", function () {
   colorValueField.select();
